@@ -12,14 +12,14 @@ export default {
     return {
       dog: 'https://images.unsplash.com/photo-1507146426996-ef05306b995a',
       cat: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba',
-      scr: ''
+      src: ''
     }
   },
   created () {
-    if (process.env.VUE_APP_PET === 'dog') {
-      this.scr = this.dog
-    } else if (process.env.VUE_APP_PET === 'cat') {
-      this.scr = this.cat
+    if (process.env.PET === 'dog') {
+      this.src = this.dog
+    } else if (process.env.PET === 'cat') {
+      this.src = this.cat
     }
   }
 }
