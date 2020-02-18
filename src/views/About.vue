@@ -16,9 +16,9 @@ export default {
     }
   },
   created () {
-    if (process.env.PET === 'dog') {
+    if (process.env.VUE_APP_PET === 'dog') {
       this.src = this.dog
-    } else if (process.env.PET === 'cat') {
+    } else if (process.env.VUE_APP_PET === 'cat') {
       this.src = this.cat
     }
   }
